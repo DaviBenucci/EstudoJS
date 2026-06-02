@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício MATH</title>
+</head>
+
+<body>
+    <script>
+        const writeNumber = Number(prompt(`Digite um número de sua escolha`))
+        let isFloat = writeNumber % 1 !== 0
+        if (writeNumber) {
+            document.body.innerHTML = `<h1>Seu número é ${writeNumber} </h3><br> <style>* {text-align: center;} </style>`
+            document.body.innerHTML += `A raiz quadrada do seu número é: <strong>${writeNumber ** 0.5}</strong> <br>`
+            document.body.innerHTML += `Seu número é <strong>${writeNumber}</strong> <br>`
+            document.body.innerHTML += `<strong>${writeNumber}</strong> é inteiro: <strong>${Number.isInteger(writeNumber)}</strong> <br>`
+            document.body.innerHTML += `<strong>${writeNumber}</strong> é Float: <strong>${isFloat}</strong> <br>`
+            document.body.innerHTML += `É NaN: <strong>${Number.isNaN(writeNumber)}</strong> <br>`
+            document.body.innerHTML += `Arredondando para baixo: <strong>${Math.floor(writeNumber)}</strong><br>`
+            document.body.innerHTML += `Arredondando para cima: <strong>${Math.ceil(writeNumber)}</strong><br>`
+            document.body.innerHTML += `Com duas casas decimais: <strong>${writeNumber.toFixed(2)}</strong><br>`
+        } else{
+            document.body.innerHTML = `
+            <style>* { color: red;text-transform: uppercase;font-size: 33px;text-align: center;} </style>
+            O que você digitou <strong>${writeNumber}</strong> 
+            NÃO É UM NÚMERO digite corretamente`
+        }
+    </script>
+</body>
+
+</html>

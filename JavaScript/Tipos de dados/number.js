@@ -3,7 +3,7 @@
 //* São os tipos declarados como número sendo númericos, aonde mesmo que o número tenha valores decimais,
 //* na tipagem ele continua sendo number. Sem ter específicação de int opu float 
 
-console.log("---------------------------------------------------------------")
+console.log("-----------------------------------------------------------------------------")
 const number = 25
 const number2 = 25
 const number3 = 25.25
@@ -14,8 +14,7 @@ const number4 = "25"
 
 console.log (typeof number, typeof number2, typeof number3, typeof number4)
 
-console.log("----------------------------------------------------------------")
-
+console.log("-----------------------------------------------------------------------------")
 let num1 = 10.15248635
 let num2 = 2.5
 
