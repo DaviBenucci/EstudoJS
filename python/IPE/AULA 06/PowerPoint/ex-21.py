@@ -1,10 +1,15 @@
-num = int(input("Aloque um número inteiro! "))
-menor = num
+import random
+
+num = random.randint(-100, 100)
 maior = num
-for i in range(4):
-    num = int(input("Aloque um número inteiro! "))
-    if num < menor:
-        menor = num
+menor = num
+
+for i in range(0,5,1):
+    num = random.randint(-100, 100)
     if num > maior:
         maior = num
-print(f"O número maior é {maior}, \n o número menor é {menor}")
+    elif num < menor:
+        menor = num
+    print(num)
+
+print(f"O maior número é {maior}, e o menor número é {menor}")
